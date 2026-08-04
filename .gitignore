@@ -1,0 +1,44 @@
+# Secrets — never commit
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+**/api_keys*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Model weights, checkpoints, datasets — the builds produce these and they must stay out
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+*.ckpt
+checkpoints/
+runs/
+wandb/
+lightning_logs/
+**/data/
+**/datasets/
+*.arrow
+*.parquet
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
