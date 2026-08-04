@@ -16,7 +16,8 @@ row usually means the pattern's invariant is wrong in your head, not that you fo
 
 | # | Session | Problem | Pattern | Time | Verdict | Retry at | Notes |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | *Empty. First problem in Session 1.* |
+| 1 | 0 | Valid palindrome (alphanumeric, O(1) space) | two pointers | — | `failed` | 7 | Approach stated correctly before coding ✓. Pattern identified ✓. Execution: missed the alnum filter entirely (the actual problem), `right` off by one, `for` for `while`, `lower(x)` for `x.lower()`. |
+| 2 | 0 | Longest substring without repeating chars | sliding window | — | `failed` | 7 | Blank. W2 material. |
 
 ---
 

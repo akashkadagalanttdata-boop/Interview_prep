@@ -7,8 +7,37 @@ mock, or advance a build.
 
 Modes are defined in `TUTOR.md` §4. **Nothing advances out of a week below L3** (`TUTOR.md` §7).
 
-> **Session 0 rewrites W1–W3** based on calibration results. Anything already at L3 compresses;
-> freed hours move to the design-first weeks (W15–17, W22, W25).
+> ## Session 0 calibration result (2026-08-04)
+>
+> 14 items: **9 blanks, 3 partials, 1 wrong-direction, 1 right-pattern-failed-execution.**
+>
+> **No compression is available anywhere.** The plan was written expecting some topics to be at
+> L3 already and to free hours for the design-first weeks. Nothing was. The 26 weeks are tight,
+> not generous — treat the Day-7 consolidation slots as real capacity, not slack.
+>
+> **Two changes, both narrow:**
+>
+> 1. **Lane A gets a Python fluency prepend in W1 D1–2, before the first two-pointer problem.**
+>    Three mechanical errors in twelve lines (`len(text)` vs `len(text)-1`, `for` where `while`
+>    belongs, `lower(x)` vs `x.lower()`) means the coding lane would otherwise spend six months
+>    bottlenecked on syntax while trying to teach pattern recognition. Fix the substrate first.
+> 2. **Constraint restatement is now mandatory in Lane A.** Problem A's approach was correct and
+>    its implementation ignored the alphanumeric filter — the actual substance of the question.
+>    That's the same error class as the off-by-one. From Session 1: restate the constraints in
+>    your own words *before* stating the approach. Two extra sentences, and it addresses the
+>    failure mode that cost the most in calibration.
+>
+> **What calibration did not change:** the AI-first ordering is confirmed correct. Q1–Q3
+> (tokenization, the √d_k term, KV-cache validity) were all blanks, and they are W1, W2, and W4
+> material respectively. **Where answers did come, the reasoning was sound** — staleness as the
+> deciding factor on fine-tune-vs-RAG, retry amplification under load. That distinction matters
+> for how to run the program: this is a knowledge gap, not a reasoning gap, which is why
+> teach-then-test is the right opening mode and why socratic can start on schedule in W2 rather
+> than being deferred.
+>
+> **One dependency to watch:** weak-spot #9 (class imbalance and base rates) is W18 material but
+> **Build #2 in W6 needs it** — you can't design an eval harness without knowing why 99.2%
+> accuracy can be worthless. Cover it inline during W6 D3 rather than moving the whole ML block.
 
 ---
 
@@ -19,7 +48,7 @@ system-design track. Teaching mode is **rigorous reasoning**: derive shapes, exp
 component, debug real models. Three scoped builds anchor it.
 
 ## Week 1 · Tokens to embeddings · *teach-then-test*
-**Lane A:** two pointers
+**Lane A:** **Python fluency (D1–2, added post-calibration)**, then two pointers (D3–7)
 
 | D | Lane B |
 |---|---|

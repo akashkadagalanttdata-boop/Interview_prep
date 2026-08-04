@@ -4,19 +4,20 @@
 
 ```yaml
 session: 0
-week: 0
+week: 1
 day: 0
-mode: calibration
-lane_a_pattern: none
-lane_b_topic: "Session 0 — calibration"
+mode: teach-then-test
+lane_a_pattern: "Python fluency, then two pointers"
+lane_b_topic: "Session 0 complete — next: W1D1 next-token prediction & cross-entropy"
 started: 2026-08-04
-last_session_date: null
-next_action: "Run Session 0 calibration per TUTOR.md §9"
-mastery_counts: { L0: 148, L1: 0, L2: 0, L3: 0, L4: 0 }
+last_session_date: 2026-08-04
+next_action: "Session 1 — W1D1. Lane A: Python fluency drill BEFORE first two-pointer problem (see calibration finding)."
+mastery_counts: { L0: 144, L1: 2, L2: 2, L3: 0, L4: 0 }
 problems_solved: 0
 mocks_completed: 0
 builds_completed: 0
 eli5_passed: 0
+calibration: "14 items. 9 blanks, 3 partials, 1 wrong-direction, 1 right-pattern-failed-execution. No compression available anywhere — 26-week plan is tight, not generous."
 ```
 
 ---
@@ -99,11 +100,11 @@ All 148 concepts start at **L0**. Session 0 calibration sets real starting level
 | BM25 & hybrid retrieval | 0 | — | |
 | Cross-encoder vs bi-encoder reranking | 0 | — | |
 | Query rewriting / HyDE | 0 | — | |
-| Retrieval failure taxonomy | 0 | — | |
+| Retrieval failure taxonomy | 1 | — | S0: named prompt assembly as one branch. Missing position bias, conflicting chunks, multi-hop, parametric override. |
 | Grounding & citations | 0 | — | |
 | Hallucination despite retrieval | 0 | — | |
 | recall@k / MRR / NDCG | 0 | — | |
-| Adaptation decision framework | 0 | — | |
+| Adaptation decision framework | 2 | — | S0: reached staleness as the deciding factor unprompted. Sound instinct, incomplete framework. |
 | LoRA mechanics | 0 | — | |
 | SFT vs DPO vs RLHF | 0 | — | |
 | Distillation | 0 | — | |
@@ -191,7 +192,7 @@ All 148 concepts start at **L0**. Session 0 calibration sets real starting level
 | Event vs processing time, watermarks | 0 | — | |
 | Windowing; Lambda vs Kappa | 0 | — | |
 | Failure taxonomy & gray failure | 0 | — | |
-| Retries, backoff, jitter | 0 | — | |
+| Retries, backoff, jitter | 2 | — | S0: got retry amplification. Missing jitter/storms/circuit breakers/budgets. |
 | Circuit breakers & bulkheads | 0 | — | |
 | Load shedding & degradation | 0 | — | |
 | 2PC vs sagas | 0 | — | |
@@ -213,7 +214,7 @@ All 148 concepts start at **L0**. Session 0 calibration sets real starting level
 | ROC-AUC vs PR-AUC | 0 | — | |
 | NDCG | 0 | — | |
 | Calibration | 0 | — | |
-| Business goal → metric mapping | 0 | — | |
+| Business goal → metric mapping | 1 | — | S0: knew to interrogate the number, asked about dataset sizes rather than base rate. Right instinct, wrong question. |
 | Trees / GBDT | 0 | — | |
 | Representation learning | 0 | — | |
 | Contrastive objectives & hard negatives | 0 | — | |
@@ -267,7 +268,7 @@ All 148 concepts start at **L0**. Session 0 calibration sets real starting level
 
 | # | Date | W/D | Lane A | Lane B | Outcome |
 |---|---|---|---|---|---|
-| — | — | — | — | — | *No sessions yet. Session 0 is calibration.* |
+| 0 | 2026-08-04 | W0D0 | 2 problems, both failed | Calibration, 12 diagnostics | 9 blanks, 3 partials, 1 wrong-direction, 1 right-pattern-failed-execution. No compression available. AI-first ordering confirmed. Added Python fluency prepend to W1 Lane A + mandatory constraint restatement. 13 weak spots logged. |
 
 ---
 
