@@ -3,21 +3,22 @@
 <!-- STATE BLOCK: machine-readable. Tutors read this first. Update every session. -->
 
 ```yaml
-session: 0
+session: 1
 week: 1
-day: 0
+day: 1
 mode: teach-then-test
-lane_a_pattern: "Python fluency, then two pointers"
-lane_b_topic: "Session 0 complete — next: W1D1 next-token prediction & cross-entropy"
+lane_a_pattern: "Python fluency (day 1 of 2)"
+lane_b_topic: "Next-token prediction, cross-entropy, perplexity — covered"
 started: 2026-08-04
-last_session_date: 2026-08-04
-next_action: "Session 1 — W1D1. Lane A: Python fluency drill BEFORE first two-pointer problem (see calibration finding)."
-mastery_counts: { L0: 144, L1: 2, L2: 2, L3: 0, L4: 0 }
+last_session_date: 2026-08-05
+next_action: "Session 2 — W1D2: tokenization & BPE. Lane A: Python fluency day 2 (re-test all 8 items cold). Cross-entropy ELI5 rewrite is due."
+mastery_counts: { L0: 141, L1: 3, L2: 4, L3: 0, L4: 0 }
 problems_solved: 0
 mocks_completed: 0
 builds_completed: 0
 eli5_passed: 0
 calibration: "14 items. 9 blanks, 3 partials, 1 wrong-direction, 1 right-pattern-failed-execution. No compression available anywhere — 26-week plan is tight, not generous."
+s1_finding: "Architectural scaffold absent, not just details — corrected S0's 'knows territory, missing details' read. Python fluency 1/8. But: computed perplexity correctly from machinery given 10 min earlier, and reached the cross-entropy core idea after one hint. Reasoning is sound where knowledge exists. Articulation is the new bottleneck — ELI5 failed on a concept demonstrably understood."
 ```
 
 ---
@@ -40,8 +41,9 @@ All 148 concepts start at **L0**. Session 0 calibration sets real starting level
 
 | Concept | L | ELI5 | Notes |
 |---|---|---|---|
-| Next-token prediction & cross-entropy | 0 | — | |
-| Perplexity | 0 | — | |
+| Next-token prediction & cross-entropy | 2 | 1 ✗ | S1: computed correctly, reached the core idea after one hint. ELI5 grade 1 — dropped the comparison and the "by a lot". Missed irreducible entropy unprompted. |
+| Perplexity | 2 | — | S1: "effective number of options" understood and applied correctly. |
+| Irreducible entropy / loss floor | 1 | — | S1: taught, not yet tested. Blocks correct perplexity comparison. |
 | BPE tokenization | 0 | — | |
 | Token-boundary failure modes | 0 | — | |
 | Non-English token cost | 0 | — | |
@@ -269,6 +271,7 @@ All 148 concepts start at **L0**. Session 0 calibration sets real starting level
 | # | Date | W/D | Lane A | Lane B | Outcome |
 |---|---|---|---|---|---|
 | 0 | 2026-08-04 | W0D0 | 2 problems, both failed | Calibration, 12 diagnostics | 9 blanks, 3 partials, 1 wrong-direction, 1 right-pattern-failed-execution. No compression available. AI-first ordering confirmed. Added Python fluency prepend to W1 Lane A + mandatory constraint restatement. 13 weak spots logged. |
+| 1 | 2026-08-05 | W1D1 | Python fluency 1/8 | Next-token prediction, cross-entropy, perplexity | Recall 5 due: 1 partial, 3 blank, 1 skipped, R5 code-reading 2.5/4 (found a planted bug). Lane B: both closing questions answered correctly — first computation from newly-taught machinery. ELI5 grade 1, did not pass. **Finding: architectural scaffold absent; articulation is now the bottleneck, not comprehension.** |
 
 ---
 

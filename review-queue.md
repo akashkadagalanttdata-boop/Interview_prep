@@ -24,11 +24,16 @@ recognition is what makes people feel prepared while failing interviews.
 
 | Due at session | Concept | Chain position | Last outcome |
 |---|---|---|---|
-| 1 | Tokenization → letter-level failure | +1 | blank at S0 |
-| 1 | Scaled dot-product, the √d_k term | +1 | blank at S0 |
-| 1 | KV cache correctness ← causal mask | +1 | blank at S0 |
-| 1 | Cosine vs dot product | +1 | blank at S0 |
-| 1 | Python: `.lower()`, `while`, index bounds | +1 | 3 errors at S0 |
+| 2 | Tokenization → letter-level failure | +1 (reset) | partial at S1 |
+| 2 | Scaled dot-product, the √d_k term | +1 (reset) | blank at S1 |
+| 2 | KV cache correctness ← causal mask | +1 (reset) | blank at S1 |
+| 2 | Cosine vs dot product | +1 (reset) | not answered at S1 |
+| 2 | Python: `.lower()`, `while`, index bounds | +1 (reset) | 2 of 4 found at S1 |
+| 2 | **Python: all 8 fluency items, cold** | +1 | 1/8 at S1 |
+| 2 | **Cross-entropy ELI5 — rewrite** | +1 | grade 1 at S1 |
+| 2 | Irreducible entropy | +1 | taught S1, untested |
+| 4 | Next-token prediction & cross-entropy | +3 | correct at S1 |
+| 4 | Perplexity | +3 | correct at S1 |
 | 3 | Retrieval failure taxonomy | +3 | partial at S0 |
 | 3 | Adaptation: fine-tune vs RAG | +3 | partial at S0 |
 | 3 | Retry amplification | +3 | partial at S0 |

@@ -38,6 +38,12 @@ weak-spots file usually means a lenient tutor, not a strong learner.
 | 11 | 0 | **Python mechanics** | 3 errors in 12 lines: `len(text)` not `len(text)-1`; `for` where `while` belongs; `lower(x)` not `x.lower()`. Will bottleneck Lane A on syntax instead of patterns. | `RECURRING`-risk | — |
 | 12 | 0 | **Reading constraints fully** | Problem A ignored the alphanumeric-filtering requirement — the actual substance of the problem. Same error class as the off-by-one: skimming the spec. | model | — |
 | 13 | 0 | Sliding window | Blank. W2 Lane A material. | gap | — |
+| 14 | 1 | **No architectural scaffold for LLMs** | Not just missing details — missing the map. "Not sure what a transformer clearly does." S0's read ("knows territory, missing details") was wrong. Nothing for W1–W6 details to attach to until W2 lands. | `model` | — |
+| 15 | 1 | **Articulation — the new bottleneck** | Answered both cross-entropy questions correctly, then could not write the ELI5 for the same concept. Spoken version ("by a lot") was better than written. Comprehension is outpacing expression, and interviews score expression. | `articulation` | — |
+| 16 | 1 | Python: floor division & modulo signs | `-7 // 2` → answered -3, is -4. Python floors toward −∞; `%` takes the divisor's sign. C/Java intuition carried over. Bites in binary search on negative ranges. | `error` | — |
+| 17 | 1 | Python: mutable default arguments | **Inverted mental model** — said each call returns only the new item; the default list is created once at def time and shared across all calls forever. A backwards model is worse than a blank: nothing prompts a check. | `model` | — |
+| 18 | 1 | Python: `heapq`, `bisect`, `Counter` | Five consecutive blanks: `nlargest`, max-heap negation trick, `bisect_left` vs `right`, `Counter`, sort stability under `reverse=True`. | `gap` | — |
+| 19 | 1 | Irreducible entropy | Treated lower cross-entropy as unconditionally better. Missed that some prompts are genuinely high-entropy and confident answers there are *worse*. Blocks valid perplexity comparison and W6 eval design. | `model` | — |
 
 **Type:** `error` (got it wrong) · `gap` (didn't know it existed) · `model` (wrong mental
 model, not a fact) · `conflict` (source disagreement) · `articulation` (knew it, explained it
